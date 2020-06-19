@@ -22,6 +22,7 @@ let modeButtons = document.querySelectorAll('.mode');
 init();
 
 function init() {
+    // mode buttons event listeners
     for (let i = 0; i < modeButtons.length; i++) {
         modeButtons[i].addEventListener('click', function(e) {
             // select event target
@@ -40,8 +41,6 @@ function init() {
         }, false);
     }
 }
-
-
 
 
 function reset() {
@@ -85,7 +84,7 @@ colorDisplay.textContent = pickedColor;
 
 for(let i = 0; i < squares.length; i++) {
     // add initial colors to squares
-    squares[i].style.backgroundColor = colors[i];
+    
 
     // add event listeners to squares
     squares[i].addEventListener('click', function(e) {
@@ -97,15 +96,14 @@ for(let i = 0; i < squares.length; i++) {
         // compare color to pickedColor
         if (clickedColor === pickedColor) {
             messageDisplay.textContent = 'Correct!';
-            changeColors(clickedColor);
             resetButton.textContent = 'Play Again?';
+            changeColors(clickedColor);
             h1.style.backgroundColor = clickedColor;
         }
         else {
             target.style.backgroundColor = '#232323';
             messageDisplay.textContent = 'Try again';
         }
-
     }, false);
 }
 
