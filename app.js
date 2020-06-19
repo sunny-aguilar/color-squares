@@ -28,6 +28,7 @@ for (var i = 0; i < squares.length; i++) {
         // compare color to pickedColor
         if (clickedColor === pickedColor) {
             messageDisplay.textContent = 'Correct';
+            changeColors(clickedColor);
         }
         else {
             target.style.backgroundColor = '#232323';
