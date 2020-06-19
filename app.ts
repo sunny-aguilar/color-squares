@@ -102,7 +102,7 @@ function reset() {
     h1.style.background = 'steelblue';
 }
 
- 
+
 
 // change tile colors on selecting correct tile
 function changeColors(color) {
