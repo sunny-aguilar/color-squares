@@ -107,8 +107,6 @@ function reset() {
 resetButton.addEventListener('click', reset, false);
 
 
-
-
 // change tile colors on selecting correct tile
 function changeColors(color) {
     // loop through all squares
