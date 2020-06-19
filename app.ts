@@ -6,8 +6,8 @@ export {}
 // tsc app.js --watch => compile as changes happen
 
 
-
-let colors = generateRandomColors(6);
+let numSquares = 6;
+let colors = generateRandomColors(numSquares);
 let squares = document.querySelectorAll('.square');
 let pickedColor = pickColor();
 let colorDisplay = document.getElementById('colorDisplay');
@@ -21,28 +21,59 @@ let hardBtn = document.querySelector('#hardBtn');
 easyBtn.addEventListener('click', function() {
     hardBtn.classList.remove('selected');
     easyBtn.classList.add('selected');
-    colors = generateRandomColors(3);
+    numSquares = 3;
+    colors = generateRandomColors(numSquares);
+    pickedColor = pickColor();
+    colorDisplay.textContent = pickedColor;
+    for (let i = 0; i < squares.length; i++) {
+        if (colors[i]) {
+            squares[i].style.background = colors[i];
+        }
+        else {
+            squares[i].style.display = 'none';
+        }
+    }
 }, false);
 
 hardBtn.addEventListener('click', function() {
     easyBtn.classList.remove('selected');
     hardBtn.classList.add('selected');
+    numSquares = 6;
+    colors = generateRandomColors(numSquares );
+    pickedColor = pickColor();
+    colorDisplay.textContent = pickedColor;
+    for (let i = 0; i < squares.length; i++) {
+            squares[i].style.background = colors[i];
+            squares[i].style.display = 'block';
+    }
 }, false);
 
 
 // add event listener to buton
-resetButton.addEventListener('click', function() {
+resetButton.addEventListener('click', function(e) {
+    // select event target 
+    let target = e.target;
+
     // generate new colors
-    colors = generateRandomColors(6);
+    colors = generateRandomColors(numSquares);
+
     // pick a new random color from array
     pickedColor = pickColor();
+
     // change colorDisplay to match picked color
     colorDisplay.textContent = pickedColor;
+
+    // reset text display
+    target.textContent = 'New Colors';
+    // this.textContent = 'New Colors';
+
+    // update display message
+    messageDisplay.textContent = '';
     // change colors of squares
     for (let i = 0; i < squares.length; i++) {
         squares[i].style.background = colors[i];
     }
-    h1.style.background = '#232323';
+    h1.style.background = 'steelblue';
 }, false);
 
 
@@ -63,7 +94,7 @@ for(let i = 0; i < squares.length; i++) {
 
         // compare color to pickedColor
         if (clickedColor === pickedColor) {
-            messageDisplay.textContent = 'Correct';
+            messageDisplay.textContent = 'Correct!';
             changeColors(clickedColor);
             resetButton.textContent = 'Play Again?';
             h1.style.backgroundColor = clickedColor;
