@@ -23,12 +23,9 @@ let modeButtons = document.querySelectorAll('.mode');
 init();
 
 function init() {
-    // set up mode buttons
-    setupModeButtons();
-    // setup squares
-    setupSquares();
-    // reset program
-    reset();
+    setupModeButtons();     // set up mode buttons
+    setupSquares();         // setup squares
+    reset();                // reset program
 }
 
 

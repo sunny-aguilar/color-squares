@@ -17,12 +17,9 @@ var modeButtons = document.querySelectorAll('.mode');
 // initialize program
 init();
 function init() {
-    // set up mode buttons
-    setupModeButtons();
-    // setup squares
-    setupSquares();
-    // reset program
-    reset();
+    setupModeButtons(); // set up mode buttons
+    setupSquares(); // setup squares
+    reset(); // reset program
 }
 function setupModeButtons() {
     // mode buttons event listeners
