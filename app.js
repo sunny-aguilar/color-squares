@@ -45,7 +45,6 @@ function changeColors(color) {
     }
 }
 function pickColor() {
-    var Math, floor;
-    (Math.random() * 255 + 1);
-    return;
+    var random = Math.floor(Math.random() * colors.length);
+    return colors[random];
 }

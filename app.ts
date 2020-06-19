@@ -60,8 +60,8 @@ function changeColors(color) {
 
 
 function pickColor() {
-    let Math.floor(Math.random() * 255 + 1);
-    return
+    let random = Math.floor(Math.random() * colors.length);
+    return colors[random];
 }
 
 
