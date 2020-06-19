@@ -103,6 +103,11 @@ function reset() {
 }
 
 
+// add event listener to buton
+resetButton.addEventListener('click', reset, false);
+
+
+
 
 // change tile colors on selecting correct tile
 function changeColors(color) {
