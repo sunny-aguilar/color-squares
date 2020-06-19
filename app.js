@@ -20,4 +20,10 @@ for (var i = 0; i < squares.length; i++) {
     // add initial colors to squares
     squares[i].style.backgroundColor = colors[i];
     // add event listeners to squares
+    squares[i].addEventListener('click', function (e) {
+        var target = e.target;
+        // grab color of clicked square
+        alert(e.style.backgroundColor);
+        // compare color to pickedColor
+    }, false);
 }
