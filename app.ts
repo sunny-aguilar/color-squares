@@ -17,13 +17,15 @@ let resetButton = document.querySelector('#reset');
 let easyBtn = document.querySelector('#easyBtn');
 let hardBtn = document.querySelector('#hardBtn');
 
-
+// hard and easy button event listeners
 easyBtn.addEventListener('click', function() {
-    alert('Easy picked');
+    hardBtn.classList.remove('selected');
+    easyBtn.classList.add('selected');
 }, false);
 
 hardBtn.addEventListener('click', function() {
-    alert('Easy picked');
+    easyBtn.classList.remove('selected');
+    hardBtn.classList.add('selected');
 }, false);
 
 

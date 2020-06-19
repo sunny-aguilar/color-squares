@@ -12,11 +12,14 @@ var h1 = document.querySelector('h1');
 var resetButton = document.querySelector('#reset');
 var easyBtn = document.querySelector('#easyBtn');
 var hardBtn = document.querySelector('#hardBtn');
+// hard and easy button event listeners
 easyBtn.addEventListener('click', function () {
-    alert('Easy picked');
+    hardBtn.classList.remove('selected');
+    easyBtn.classList.add('selected');
 }, false);
 hardBtn.addEventListener('click', function () {
-    alert('Easy picked');
+    easyBtn.classList.remove('selected');
+    hardBtn.classList.add('selected');
 }, false);
 // add event listener to buton
 resetButton.addEventListener('click', function () {
