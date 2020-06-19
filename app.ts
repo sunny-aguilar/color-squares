@@ -19,7 +19,10 @@ let resetButton = document.querySelector('#reset');
 
 // add event listener to buton
 resetButton.addEventListener('click', function() {
-    alert('Works!');
+    // generate new colors
+    colors = generateRandomColors(6);
+    // pick a new random color from array
+    // change colors of squares
 }, false);
 
 
