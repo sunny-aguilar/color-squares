@@ -40,6 +40,33 @@ function init() {
             reset();
         }, false);
     }
+
+    // add colors to squares
+    for(let i = 0; i < squares.length; i++) {
+        // add initial colors to squares
+
+        // add event listeners to squares
+        squares[i].addEventListener('click', function(e) {
+            let target = e.target;
+
+            // grab color of clicked square
+            let clickedColor = target.style.backgroundColor;
+
+            // compare color to pickedColor
+            if (clickedColor === pickedColor) {
+                messageDisplay.textContent = 'Correct!';
+                resetButton.textContent = 'Play Again?';
+                changeColors(clickedColor);
+                h1.style.backgroundColor = clickedColor;
+            }
+            else {
+                target.style.backgroundColor = '#232323';
+                messageDisplay.textContent = 'Try again';
+            }
+        }, false);
+    }
+
+    reset();
 }
 
 
@@ -81,31 +108,6 @@ resetButton.addEventListener('click', reset, false);
 
 // update colorDisplay
 colorDisplay.textContent = pickedColor;
-
-for(let i = 0; i < squares.length; i++) {
-    // add initial colors to squares
-    
-
-    // add event listeners to squares
-    squares[i].addEventListener('click', function(e) {
-        let target = e.target;
-
-        // grab color of clicked square
-        let clickedColor = target.style.backgroundColor;
-
-        // compare color to pickedColor
-        if (clickedColor === pickedColor) {
-            messageDisplay.textContent = 'Correct!';
-            resetButton.textContent = 'Play Again?';
-            changeColors(clickedColor);
-            h1.style.backgroundColor = clickedColor;
-        }
-        else {
-            target.style.backgroundColor = '#232323';
-            messageDisplay.textContent = 'Try again';
-        }
-    }, false);
-}
 
 
 // change tile colors on selecting correct tile
