@@ -19,6 +19,7 @@ let resetButton = document.querySelector('#reset');
 let modeButtons = document.querySelectorAll('.mode');
 
 
+// initialize program
 init();
 
 function init() {

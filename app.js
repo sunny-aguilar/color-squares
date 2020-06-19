@@ -14,6 +14,7 @@ var resetButton = document.querySelector('#reset');
 // let easyBtn = document.querySelector('#easyBtn');
 // let hardBtn = document.querySelector('#hardBtn');
 var modeButtons = document.querySelectorAll('.mode');
+// initialize program
 init();
 function init() {
     // mode buttons event listeners
