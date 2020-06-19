@@ -18,7 +18,10 @@ let colors = [
 
 let squares = document.querySelectorAll('.square');
 let pickedColor = colors[3];
-let colorDisplay = document.getElementById('#colorDisplay');
+let colorDisplay = document.getElementById('colorDisplay');
+
+// update colorDisplay
+colorDisplay.textContent = pickedColor;
 
 for(let i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
