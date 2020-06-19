@@ -5,8 +5,8 @@ exports.__esModule = true;
 // tsc app.js --watch => compile as changes happen
 var numSquares = 6;
 var colors = [];
-var squares = document.querySelectorAll('.square');
 var pickedColor;
+var squares = document.querySelectorAll('.square');
 var colorDisplay = document.getElementById('colorDisplay');
 var messageDisplay = document.querySelector('#message');
 var h1 = document.querySelector('h1');

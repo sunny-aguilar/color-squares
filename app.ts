@@ -8,8 +8,8 @@ export {}
 
 let numSquares = 6;
 let colors = [];
-let squares = document.querySelectorAll('.square');
 let pickedColor;
+let squares = document.querySelectorAll('.square');
 let colorDisplay = document.getElementById('colorDisplay');
 let messageDisplay = document.querySelector('#message');
 let h1 = document.querySelector('h1');
