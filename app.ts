@@ -25,6 +25,7 @@ init();
 function init() {
     // set up mode buttons
     setupModeButtons();
+
     // mode buttons event listeners
     for (let i = 0; i < modeButtons.length; i++) {
         modeButtons[i].addEventListener('click', function(e) {
