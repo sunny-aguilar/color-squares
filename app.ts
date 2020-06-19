@@ -30,6 +30,7 @@ for(let i = 0; i < squares.length; i++) {
     // add event listeners to squares
     squares[i].addEventListener('click', function(e) {
         let target = e.target;
+
         // grab color of clicked square
         let clickedColor = target.style.backgroundColor;
 
