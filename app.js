@@ -29,7 +29,7 @@ for (var i = 0; i < squares.length; i++) {
             alert('correct!');
         }
         else {
-            alert('Wrong!');
+            target.style.backgroundColor = '#232323';
         }
     }, false);
 }
