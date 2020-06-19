@@ -15,6 +15,8 @@ let colorDisplay = document.getElementById('colorDisplay');
 let messageDisplay = document.querySelector('#message');
 let h1 = document.querySelector('h1');
 let resetButton = document.querySelector('#reset');
+let easyBtn = document.querySelector('#easyBtn');
+let easyBtn = document.querySelector('#hardBtn');
 
 
 // add event listener to buton
