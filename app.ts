@@ -14,8 +14,15 @@ let colorDisplay = document.getElementById('colorDisplay');
 let messageDisplay = document.querySelector('#message');
 let h1 = document.querySelector('h1');
 let resetButton = document.querySelector('#reset');
-let easyBtn = document.querySelector('#easyBtn');
-let hardBtn = document.querySelector('#hardBtn');
+// let easyBtn = document.querySelector('#easyBtn');
+// let hardBtn = document.querySelector('#hardBtn');
+let modeButtons = document.querySelectorAll('.mode');
+
+for (let i = 0; i < modeButtons.length; i++) {
+    modeButtons[i].addEventListener('click', function() {
+        
+    }, false);
+}
 
 // hard and easy button event listeners
 easyBtn.addEventListener('click', function() {

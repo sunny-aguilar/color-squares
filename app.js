@@ -11,8 +11,13 @@ var colorDisplay = document.getElementById('colorDisplay');
 var messageDisplay = document.querySelector('#message');
 var h1 = document.querySelector('h1');
 var resetButton = document.querySelector('#reset');
-var easyBtn = document.querySelector('#easyBtn');
-var hardBtn = document.querySelector('#hardBtn');
+// let easyBtn = document.querySelector('#easyBtn');
+// let hardBtn = document.querySelector('#hardBtn');
+var modeButtons = document.querySelectorAll('.mode');
+for (var i = 0; i < modeButtons.length; i++) {
+    modeButtons[i].addEventListener('click', function () {
+    }, false);
+}
 // hard and easy button event listeners
 easyBtn.addEventListener('click', function () {
     hardBtn.classList.remove('selected');
