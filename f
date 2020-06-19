@@ -8,7 +8,7 @@
 function push_commit()
 {
     #commit changes
-    git commit -am 'TS Hello World!'
+    git commit -am 'color game'
     # push to github
     git push
 }
@@ -16,7 +16,7 @@ function push_commit()
 function commit()
 {
     # commt changes only
-    git commit -am 'TS Hello World!'
+    git commit -am 'color game'
 }
 
 # what to run
