@@ -21,15 +21,20 @@ for (var i = 0; i < modeButtons.length; i++) {
         modeButtons[0].classList.remove('selected');
         modeButtons[1].classList.remove('selected');
         target.classList.add('selected');
+        if (target.textContent = 'Easy') {
+            numSquares = 3;
+        }
+        else {
+            numSquares = 6;
+        }
+        reset();
         // figure out how many squares to show
         // pick new colors
         // pick a new pickedColor
         // update page to reflect changes
     }, false);
 }
-function reset(e) {
-    // select event target
-    var target = e.target;
+function reset() {
     // generate new colors
     colors = generateRandomColors(numSquares);
     // pick a new random color from array
@@ -37,12 +42,18 @@ function reset(e) {
     // change colorDisplay to match picked color
     colorDisplay.textContent = pickedColor;
     // reset text display
-    target.textContent = 'New Colors';
+    resetButton.textContent = 'New Colors';
     // this.textContent = 'New Colors';
     // update display message
     messageDisplay.textContent = '';
     // change colors of squares
     for (var i = 0; i < squares.length; i++) {
+        if (colors[i]) {
+            squares[i].style.background = colors[i];
+        }
+        else {
+            squares[i].style.display = 'none';
+        }
         squares[i].style.background = colors[i];
     }
     h1.style.background = 'steelblue';
