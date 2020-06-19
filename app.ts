@@ -28,8 +28,8 @@ resetButton.addEventListener('click', function() {
     // change colors of squares
     for (let i = 0; i < squares.length; i++) {
         squares[i].style.background = colors[i];
-        
     }
+    h1.style.background = '#232323';
 }, false);
 
 
@@ -52,6 +52,7 @@ for(let i = 0; i < squares.length; i++) {
         if (clickedColor === pickedColor) {
             messageDisplay.textContent = 'Correct';
             changeColors(clickedColor);
+            resetButton.textContent = 'Play Again?';
             h1.style.backgroundColor = clickedColor;
         }
         else {
