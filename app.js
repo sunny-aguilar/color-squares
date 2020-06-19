@@ -21,6 +21,7 @@ function init() {
     setupModeButtons();
     // setup squares
     setupSquares();
+    // reset program
     reset();
 }
 function setupModeButtons() {

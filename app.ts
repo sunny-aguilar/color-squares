@@ -25,10 +25,9 @@ init();
 function init() {
     // set up mode buttons
     setupModeButtons();
-
     // setup squares
     setupSquares();
-
+    // reset program
     reset();
 }
 
