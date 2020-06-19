@@ -65,6 +65,7 @@ function generateRandomColors(num) {
     // add num random colors to arr
     for (let i = 0; i < num; i++) {
         // get random color push into array
+        
     }
 
     // return that array
