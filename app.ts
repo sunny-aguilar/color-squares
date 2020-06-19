@@ -36,7 +36,7 @@ for(let i = 0; i < squares.length; i++) {
 
         // compare color to pickedColor
         if (clickedColor === pickedColor) {
-
+            alert('correct!');
         }
 
     }, false);

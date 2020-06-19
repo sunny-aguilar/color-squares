@@ -26,6 +26,7 @@ for (var i = 0; i < squares.length; i++) {
         var clickedColor = target.style.backgroundColor;
         // compare color to pickedColor
         if (clickedColor === pickedColor) {
+            alert('correct!');
         }
     }, false);
 }
