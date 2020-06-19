@@ -106,9 +106,7 @@ function reset() {
 
 
 // add event listener to buton
-resetButton.addEventListener('click', function(e) {
-    reset();
-}, false);
+resetButton.addEventListener('click', reset, false);
 
 
 
