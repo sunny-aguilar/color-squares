@@ -6,7 +6,7 @@ exports.__esModule = true;
 var numSquares = 6;
 var colors = [];
 var squares = document.querySelectorAll('.square');
-var pickedColor = pickColor();
+var pickedColor;
 var colorDisplay = document.getElementById('colorDisplay');
 var messageDisplay = document.querySelector('#message');
 var h1 = document.querySelector('h1');
