@@ -23,8 +23,7 @@ for (var i = 0; i < squares.length; i++) {
     squares[i].addEventListener('click', function (e) {
         var target = e.target;
         // grab color of clicked square
-        // alert(e.style.backgroundColor);
-        alert(this.style.backgroundColor);
+        alert(target.style.backgroundColor);
         // compare color to pickedColor
     }, false);
 }
