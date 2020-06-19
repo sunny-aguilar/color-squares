@@ -26,25 +26,6 @@ function init() {
     // set up mode buttons
     setupModeButtons();
 
-    // mode buttons event listeners
-    for (let i = 0; i < modeButtons.length; i++) {
-        modeButtons[i].addEventListener('click', function(e) {
-            // select event target
-            let target = e.target;
-
-            modeButtons[0].classList.remove('selected');
-            modeButtons[1].classList.remove('selected');
-            target.classList.add('selected');
-            if (target.textContent == 'Easy') {
-                numSquares = 3;
-            }
-            else {
-                numSquares = 6;
-            }
-            reset();
-        }, false);
-    }
-
     // add colors to squares
     for(let i = 0; i < squares.length; i++) {
         // add initial colors to squares
@@ -71,6 +52,28 @@ function init() {
     }
 
     reset();
+}
+
+
+function setupModeButtons() {
+    // mode buttons event listeners
+    for (let i = 0; i < modeButtons.length; i++) {
+        modeButtons[i].addEventListener('click', function(e) {
+            // select event target
+            let target = e.target;
+
+            modeButtons[0].classList.remove('selected');
+            modeButtons[1].classList.remove('selected');
+            target.classList.add('selected');
+            if (target.textContent == 'Easy') {
+                numSquares = 3;
+            }
+            else {
+                numSquares = 6;
+            }
+            reset();
+        }, false);
+    }
 }
 
 
