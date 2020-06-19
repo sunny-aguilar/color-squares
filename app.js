@@ -21,7 +21,7 @@ for (var i = 0; i < modeButtons.length; i++) {
         modeButtons[0].classList.remove('selected');
         modeButtons[1].classList.remove('selected');
         target.classList.add('selected');
-        if (target.textContent = 'Easy') {
+        if (target.textContent == 'Easy') {
             numSquares = 3;
         }
         else {
