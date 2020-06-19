@@ -82,8 +82,6 @@ function reset() {
     }
     h1.style.background = 'steelblue';
 }
-// add event listener to buton
-resetButton.addEventListener('click', reset, false);
 // update colorDisplay
 colorDisplay.textContent = pickedColor;
 // change tile colors on selecting correct tile
