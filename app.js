@@ -90,24 +90,7 @@ function reset() {
 // }, false);
 // add event listener to buton
 resetButton.addEventListener('click', function (e) {
-    // select event target
-    var target = e.target;
-    // generate new colors
-    colors = generateRandomColors(numSquares);
-    // pick a new random color from array
-    pickedColor = pickColor();
-    // change colorDisplay to match picked color
-    colorDisplay.textContent = pickedColor;
-    // reset text display
-    target.textContent = 'New Colors';
-    // this.textContent = 'New Colors';
-    // update display message
-    messageDisplay.textContent = '';
-    // change colors of squares
-    for (var i = 0; i < squares.length; i++) {
-        squares[i].style.background = colors[i];
-    }
-    h1.style.background = 'steelblue';
+    reset();
 }, false);
 // update colorDisplay
 colorDisplay.textContent = pickedColor;
