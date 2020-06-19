@@ -4,7 +4,7 @@ exports.__esModule = true;
 // tsc app.js - compile code
 // tsc app.js --watch => compile as changes happen
 var numSquares = 6;
-var colors = generateRandomColors(numSquares);
+var colors = [];
 var squares = document.querySelectorAll('.square');
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById('colorDisplay');
