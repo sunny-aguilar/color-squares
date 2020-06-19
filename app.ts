@@ -18,7 +18,9 @@ let easyBtn = document.querySelector('#easyBtn');
 let hardBtn = document.querySelector('#hardBtn');
 
 
-
+easyBtn.addEventListener('click', function() {
+    alert('Easy picked');
+}, false);
 
 
 // add event listener to buton
