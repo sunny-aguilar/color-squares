@@ -11,7 +11,7 @@ var messageDisplay = document.querySelector('#message');
 var h1 = document.querySelector('h1');
 var resetButton = document.querySelector('#reset');
 var easyBtn = document.querySelector('#easyBtn');
-var easyBtn = document.querySelector('#hardBtn');
+var hardBtn = document.querySelector('#hardBtn');
 // add event listener to buton
 resetButton.addEventListener('click', function () {
     // generate new colors
