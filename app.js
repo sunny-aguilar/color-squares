@@ -3,7 +3,7 @@ exports.__esModule = true;
 // commands
 // tsc app.js - compile code
 // tsc app.js --watch => compile as changes happen
-var colors = generateRandomColors();
+var colors = generateRandomColors(6);
 var squares = document.querySelectorAll('.square');
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById('colorDisplay');
@@ -41,5 +41,13 @@ function pickColor() {
     var random = Math.floor(Math.random() * colors.length);
     return colors[random];
 }
-function generateRandomColors() {
+function generateRandomColors(num) {
+    // make an array
+    var arr = [];
+    // add num random colors to arr
+    for (var i = 0; i < num; i++) {
+        // get random color push into array
+    }
+    // return that array
+    return arr;
 }

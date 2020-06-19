@@ -7,7 +7,7 @@ export {}
 
 
 
-let colors = generateRandomColors();
+let colors = generateRandomColors(6);
 
 let squares = document.querySelectorAll('.square');
 let pickedColor = pickColor();
@@ -58,8 +58,17 @@ function pickColor() {
 }
 
 
-function generateRandomColors() {
-    
+function generateRandomColors(num) {
+    // make an array
+    let arr = [];
+
+    // add num random colors to arr
+    for (let i = 0; i < num; i++) {
+        // get random color push into array
+    }
+
+    // return that array
+    return arr;
 }
 
 
