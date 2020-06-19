@@ -58,6 +58,8 @@ function pickColor() {
 }
 
 
-
+function generateRandomColors() {
+    
+}
 
 
