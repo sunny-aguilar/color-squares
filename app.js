@@ -51,3 +51,11 @@ function generateRandomColors(num) {
     // return that array
     return arr;
 }
+function randomColor() {
+    // pick a red from 0 to 255
+    var r = Math.floor(Math.random() * 256);
+    // pick a green from 0 to 255
+    var g = Math.floor(Math.random() * 256);
+    // pick a blue from 0 to 255
+    var b = Math.floor(Math.random() * 256);
+}

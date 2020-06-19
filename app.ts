@@ -65,11 +65,28 @@ function generateRandomColors(num) {
     // add num random colors to arr
     for (let i = 0; i < num; i++) {
         // get random color push into array
-        
+
     }
 
     // return that array
     return arr;
 }
+
+
+function randomColor() {
+    // pick a red from 0 to 255
+    let r = Math.floor(Math.random() * 256);
+
+    // pick a green from 0 to 255
+    let g = Math.floor(Math.random() * 256);
+
+    // pick a blue from 0 to 255
+    let b = Math.floor(Math.random() * 256);
+
+}
+
+
+
+
 
 
