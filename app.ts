@@ -18,29 +18,31 @@ let resetButton = document.querySelector('#reset');
 // let hardBtn = document.querySelector('#hardBtn');
 let modeButtons = document.querySelectorAll('.mode');
 
-for (let i = 0; i < modeButtons.length; i++) {
-    modeButtons[i].addEventListener('click', function(e) {
-        // select event target
-        let target = e.target;
 
-        modeButtons[0].classList.remove('selected');
-        modeButtons[1].classList.remove('selected');
-        target.classList.add('selected');
-        if (target.textContent == 'Easy') {
-            numSquares = 3;
-        }
-        else {
-            numSquares = 6;
-        }
-        reset();
+init();
 
-        // figure out how many squares to show
-        // pick new colors
-        // pick a new pickedColor
-        // update page to reflect changes
+function init() {
+    for (let i = 0; i < modeButtons.length; i++) {
+        modeButtons[i].addEventListener('click', function(e) {
+            // select event target
+            let target = e.target;
 
-    }, false);
+            modeButtons[0].classList.remove('selected');
+            modeButtons[1].classList.remove('selected');
+            target.classList.add('selected');
+            if (target.textContent == 'Easy') {
+                numSquares = 3;
+            }
+            else {
+                numSquares = 6;
+            }
+            reset();
+        }, false);
+    }
 }
+
+
+
 
 function reset() {
     // generate new colors

@@ -14,25 +14,24 @@ var resetButton = document.querySelector('#reset');
 // let easyBtn = document.querySelector('#easyBtn');
 // let hardBtn = document.querySelector('#hardBtn');
 var modeButtons = document.querySelectorAll('.mode');
-for (var i = 0; i < modeButtons.length; i++) {
-    modeButtons[i].addEventListener('click', function (e) {
-        // select event target
-        var target = e.target;
-        modeButtons[0].classList.remove('selected');
-        modeButtons[1].classList.remove('selected');
-        target.classList.add('selected');
-        if (target.textContent == 'Easy') {
-            numSquares = 3;
-        }
-        else {
-            numSquares = 6;
-        }
-        reset();
-        // figure out how many squares to show
-        // pick new colors
-        // pick a new pickedColor
-        // update page to reflect changes
-    }, false);
+init();
+function init() {
+    for (var i = 0; i < modeButtons.length; i++) {
+        modeButtons[i].addEventListener('click', function (e) {
+            // select event target
+            var target = e.target;
+            modeButtons[0].classList.remove('selected');
+            modeButtons[1].classList.remove('selected');
+            target.classList.add('selected');
+            if (target.textContent == 'Easy') {
+                numSquares = 3;
+            }
+            else {
+                numSquares = 6;
+            }
+            reset();
+        }, false);
+    }
 }
 function reset() {
     // generate new colors
