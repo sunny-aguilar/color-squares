@@ -14,6 +14,15 @@ let pickedColor = pickColor();
 let colorDisplay = document.getElementById('colorDisplay');
 let messageDisplay = document.querySelector('#message');
 let h1 = document.querySelector('h1');
+let resetButton = document.querySelector('#reset');
+
+
+// add event listener to buton
+resetButton.addEventListener('click', function() {
+    alert('Works!');
+}, false);
+
+
 
 // update colorDisplay
 colorDisplay.textContent = pickedColor;
