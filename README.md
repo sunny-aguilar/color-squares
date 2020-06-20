@@ -7,7 +7,7 @@ value of each property can range from 0 to 255 therefore the higher the value, t
 more of that specific color there will be. Example: RGB(255, 0, 0) specifies an all
 red color.
 
-###[Color Squares](https://sunny-aguilar.github.io/color-squares/) - Click here to play!
+### [Color Squares](https://sunny-aguilar.github.io/color-squares/) - Click here to play!
 
 
 
