@@ -6,8 +6,7 @@ RGB stands for red, green and blue. It is used to display colors on a screen. Th
 value of each property can range from 0 to 255 therefore the higher the value, the
 more of that specific color there will be. Example: RGB(255, 0, 0) specifies an all
 red color.
-
-(Color Squares)[https://sunny-aguilar.github.io/color-squares/] - Click here to play!
+[Color Squares](https://sunny-aguilar.github.io/color-squares/) - Click here to play!
 
 
 
